@@ -38,6 +38,7 @@ class EspnRequest:
 
 
 
+
     class Params:
         leagueParam: ''
         teamParam: ''
@@ -64,3 +65,19 @@ class EspnRequest:
                 return ''
             else: 
                 return 'seasonId='+ self.seasonParam
+
+
+
+class FantasyParser():
+
+    def __init__(self, rawHtml):
+        self.parser = beautifulsoup(rawHtml, 'html.parser')
+
+    def createParser(self, rawHtml):
+        self.parser = beautifulsoup(rawHtml, 'html.parser')
+
+    def getRosterTeamNames(self):
+        self.parser.
+
+
+
